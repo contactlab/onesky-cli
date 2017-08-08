@@ -14,7 +14,8 @@ const getCommand = (initCommands, type) => initCommands[type] || undefined;
 const getFirstInput = input => input.slice(0).toString();
 const mergeDefault = (type, config) => defaultConfig[type](config);
 
-module.exports = ({input, flags, pkg}) => {
+module.exports = ({input, flags}) => {
+	const pkg = require(path.join(process.cwd(), 'package.json'));
 	const currentInput = getFirstInput(input);
 	const normalizedFlags = normalizeFlags(flags);
 	const invalidInput = validateInput(currentInput);
