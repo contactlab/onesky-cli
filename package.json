@@ -1,0 +1,48 @@
+{
+	"name": "onesky-cli",
+	"version": "0.0.1",
+	"description": "One Sky cli tool",
+	"license": "Apache 2.0",
+	"repository": "contactlab/onesky-cli",
+	"author": {
+		"name": "Alessio Occhipinti",
+		"email": "info@godev.space",
+		"url": "godev.space"
+	},
+	"bin": "src/cli.js",
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"test": "xo && nyc ava"
+	},
+	"files": [
+		"src"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"onesky-cli",
+		"oneskyapp",
+		"one-sky",
+		"one-sky-node"
+	],
+	"dependencies": {
+		"fs-extra": "3.0.1",
+		"meow": "3.7.0",
+		"onesky-utils": "1.2.0"
+	},
+	"devDependencies": {
+		"ava": "0.21.0",
+		"coveralls": "2.11.12",
+		"execa": "0.8.0",
+		"nyc": "11.0.0",
+		"xo": "0.18.2"
+	},
+	"nyc": {
+		"reporter": [
+			"lcov",
+			"text"
+		]
+	}
+}
