@@ -1,3 +1,5 @@
+# :warning: This project is no longer mantained 
+
 # onesky-cli [![Build Status](https://travis-ci.org/contactlab/onesky-cli.svg?branch=master)](https://travis-ci.org/contactlab/onesky-cli) [![Coverage Status](https://coveralls.io/repos/github/contactlab/onesky-cli/badge.svg?branch=master)](https://coveralls.io/github/contactlab/onesky-cli?branch=master)
 
 > [One Sky App](https://www.oneskyapp.com/) cli tool, wrapper of [onesky-utils](https://www.npmjs.com/package/onesky-utils).
